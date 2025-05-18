@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-        password: check
+        password: abhishek
 
     steps:
       - uses: actions/checkout@v4
@@ -19,3 +19,6 @@ jobs:
 
       - name: "Checking if this working"
         run: echo "$name Abhishek"
+
+      - name: check2
+        run: echo "$name $password ${{abhishek}}
