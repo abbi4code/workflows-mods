@@ -3,12 +3,19 @@ name: base-workflow
 on:
   workflow_dispatch:
 
+env:
+    name: hi there
+
 jobs:
   testings:
     runs-on: ubuntu-latest
 
+    env:
+        password: check
+
     steps:
       - uses: actions/checkout@v4
+      
 
       - name: "Checking if this working"
-        run: echo "hi there"
+        run: echo "$name Abhishek"
