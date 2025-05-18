@@ -21,4 +21,4 @@ jobs:
         run: echo "$name Abhishek"
 
       - name: check2
-        run: echo "$name $password ${{abhishek}}
+        run: echo "$name $password ${{vars.abhishek}}
