@@ -1,0 +1,12 @@
+name: base-workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  testings:
+    runs-on: ubuntu-latest
+
+    steps:
+        - name: "Checking if this working"
+        run: echo "hi there"
